@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const Contar = () => {
   const [contador, setContador] = useState(0);
   const [mensaje, setMensaje] = useState(false);
@@ -21,7 +22,7 @@ const Contar = () => {
     <div>
       {contador}
       <br />
-      <button onClick={sumar}>Sumar</button>
+      <button className="btn btn-outline-primary" onClick={sumar}>Sumar</button>
       <button onClick={restar}>Restar</button>
       <br />
       {!mensaje && <button onClick={handleMostrar}>Mostrar mensaje</button>}

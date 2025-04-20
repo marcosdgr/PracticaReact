@@ -2,6 +2,8 @@ import React from 'react'
 import MainHome from '../Componentes/MainHome'
 import Footer from '../Componentes/Footer'
 import Contar from '../Componentes/Contar'
+import Header from '../Componentes/Header'
+
 
 const Home = () => {
   const persona = {
@@ -12,8 +14,9 @@ const Home = () => {
   }
   return (
     <div>
-      <Contar/>
+      <Header persona={persona}/>
       <MainHome/>
+      <Contar/>
       <Footer/>
 
     </div>
