@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #111;
+  }
+  
+  .footer svg {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .footer svg:hover {
+    color: #1da1f2; /* Cambia el color al pasar el mouse */
+  }
+  
