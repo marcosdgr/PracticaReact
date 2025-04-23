@@ -1,22 +1,26 @@
 import React from 'react'
 import MainHome from '../Componentes/MainHome'
 import Footer from '../Componentes/Footer'
-import Contar from '../Componentes/Contar'
 import Header from '../Componentes/Header'
+import Marcos from "../assets/marcos.jpeg";
+
 
 
 const Home = () => {
-  const persona = {
+
+  const misDatos = {
     nombre: "Marcos",
     apellido: "Gimenez",
-    lenguajes: "html,css,js",
-    datos: "demasiado sexy"
+    edad: 30,
+    imagen: Marcos,
+    lenguajes: ["js","c#","java"]
+
   }
+  
   return (
     <div>
-      <Header persona={persona}/>
-      <MainHome/>
-      <Contar/>
+      <Header/>
+      <MainHome misDatos={misDatos}/>
       <Footer/>
 
     </div>
