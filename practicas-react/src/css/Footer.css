@@ -1,19 +1,26 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #111;
-  }
-  
-  .footer svg {
-    color: #fff;
-    font-size: 24px;
-    transition: color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .footer svg:hover {
-    color: #1da1f2; /* Cambia el color al pasar el mouse */
-  }
-  
+  margin-top: 3rem;
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-top: 2px solid #00acc1;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.footer a {
+  margin: 0 10px;
+  color: #007b9f;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover {
+  color: #004d61;
+  transform: scale(1.2);
+}
+
+.footer svg {
+  vertical-align: middle;
+}
+
+

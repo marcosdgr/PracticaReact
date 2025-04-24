@@ -1,7 +1,6 @@
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
-import { CiTwitter } from "react-icons/ci";
 import "../css/Footer.css";
 const Footer = () => {
   return (
@@ -21,7 +20,7 @@ const Footer = () => {
         <CiInstagram />
       </a>
 
-      <CiTwitter />
+      
     </div>
   );
 };

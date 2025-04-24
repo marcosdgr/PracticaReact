@@ -6,6 +6,7 @@ import Marcos from "../assets/marcos.jpeg";
 
 
 
+
 const Home = () => {
 
   const misDatos = {
@@ -13,7 +14,8 @@ const Home = () => {
     apellido: "Gimenez",
     edad: 30,
     imagen: Marcos,
-    lenguajes: ["js","c#","java"]
+    lenguajes: ["js","c#","java"],
+ 
 
   }
   

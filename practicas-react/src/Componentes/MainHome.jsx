@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
+import "../css/MainHome.css"
 
 const MainHome = ({ misDatos }) => {
   const [masInfo, setMasInfo] = useState(false);
@@ -11,51 +12,24 @@ const MainHome = ({ misDatos }) => {
   const handleCerrar = () => {
     setMasInfo(false);
   };
+
   return (
-    <div style={{ padding: "2rem", display: "flex", justifyContent: "center" }}>
-      <Card
-        style={{
-          width: "18rem",
-          borderRadius: "10px",
-          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-          textAlign: "center",
-        }}
-      >
+    <div className="main-container">
+      <Card className="main-card">
         <img
           src={misDatos.imagen}
           alt="Foto 1"
-          style={{
-            width: "100%",
-            height: "200px",
-            objectFit: "cover",
-            borderRadius: "10px 10px 0 0",
-          }}
+          className="main-card-img"
         />
         <Card.Body>
-          <Card.Title
-            style={{
-              fontSize: "1.5rem",
-              fontWeight: "bold",
-              color: "#333",
-              marginBottom: "1rem",
-            }}
-          >
+          <Card.Title className="main-card-title">
             {misDatos.nombre} {misDatos.apellido}
           </Card.Title>
-          <Card.Text
-            style={{
-              color: "#555",
-              fontSize: "1rem",
-              marginBottom: "1.5rem",
-              lineHeight: "1.6",
-            }}
-          >
+          <Card.Text className="main-card-text">
             <hr />
             Estudiante de programación de la FRT UTN.
             <hr />
-            <ul
-              style={{ listStyleType: "none", padding: "0", marginTop: "1rem" }}
-            >
+            <ul className="main-card-list">
               Lenguajes:
               {misDatos.lenguajes.map((lenguaje, index) => (
                 <li key={index}>{lenguaje}</li>
@@ -69,7 +43,7 @@ const MainHome = ({ misDatos }) => {
         </Card.Body>
       </Card>
       {masInfo && (
-        <div>
+        <div className="main-info">
           <h2>Más información sobre mí</h2>
           <p>
             Hola! mi nombre es {misDatos.nombre} {misDatos.apellido}, soy
@@ -84,3 +58,4 @@ const MainHome = ({ misDatos }) => {
 };
 
 export default MainHome;
+
