@@ -18,29 +18,30 @@ const MainHome = ({ misDatos }) => {
       <Card className="main-card">
         <img
           src={misDatos.imagen}
-          alt="Foto 1"
           className="main-card-img"
         />
         <Card.Body>
-          <Card.Title className="main-card-title">
-            {misDatos.nombre} {misDatos.apellido}
-          </Card.Title>
-          <Card.Text className="main-card-text">
-            <hr />
-            Estudiante de programación de la FRT UTN.
-            <hr />
-            <ul className="main-card-list">
-              Lenguajes:
-              {misDatos.lenguajes.map((lenguaje, index) => (
-                <li key={index}>{lenguaje}</li>
-              ))}
-            </ul>
-            <hr />
-            <button type="button" onClick={handleMostrar}>
-              Mas sobre mi
-            </button>
-          </Card.Text>
-        </Card.Body>
+  <Card.Title className="main-card-title">
+    {misDatos.nombre} {misDatos.apellido}
+  </Card.Title>
+
+  <div className="main-card-text">
+    <hr />
+    Estudiante de programación de la FRT UTN.
+    <hr />
+    <ul className="main-card-list">
+      Lenguajes:
+      {misDatos.lenguajes.map((lenguaje, index) => (
+        <li key={index}>{lenguaje}</li>
+      ))}
+    </ul>
+    <hr />
+    <button type="button" onClick={handleMostrar}>
+      Mas sobre mi
+    </button>
+  </div>
+</Card.Body>
+
       </Card>
       {masInfo && (
         <div className="main-info">
